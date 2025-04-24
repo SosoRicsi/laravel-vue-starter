@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b025607127df2d93914ff9543424931a",
+    "content-hash": "8e16e412aa700e1778c7c3094c8a85c9",
     "packages": [
         {
             "name": "brick/math",
@@ -1121,6 +1121,52 @@
                 "source": "https://github.com/inertiajs/inertia-laravel/tree/v2.0.2"
             },
             "time": "2025-04-10T15:08:36+00:00"
+        },
+        {
+            "name": "jarkoricsi/quote",
+            "version": "0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SosoRicsi/quotes.git",
+                "reference": "3de563399e6a6c7e9a0b7e9bb6d1d9110682b804"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SosoRicsi/quotes/zipball/3de563399e6a6c7e9a0b7e9bb6d1d9110682b804",
+                "reference": "3de563399e6a6c7e9a0b7e9bb6d1d9110682b804",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^12.0",
+                "php": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JarkoRicsi\\Quote\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Jarkó Richárd",
+                    "email": "jarkoricsi16@gmail.com"
+                }
+            ],
+            "description": "An easy-to-use quote package.",
+            "homepage": "https://github.com/sosoricsi/quotes",
+            "keywords": [
+                "author",
+                "inspiration",
+                "quote",
+                "quotes",
+                "random quote"
+            ],
+            "support": {
+                "issues": "https://github.com/SosoRicsi/quotes/issues",
+                "source": "https://github.com/SosoRicsi/quotes/tree/0.0.4"
+            },
+            "time": "2025-04-23T08:55:26+00:00"
         },
         {
             "name": "laravel/framework",

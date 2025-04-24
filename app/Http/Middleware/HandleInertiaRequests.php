@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use App\Extensions\Quotes;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
+use JarkoRicsi\Quote\Facade\Quote;
 use Tighten\Ziggy\Ziggy;
 
 class HandleInertiaRequests extends Middleware
@@ -37,12 +38,12 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
-        [$message, $author] = str((require public_path('quotes.php'))->random())->explode('-');
+        $quote = Quote::random();
 
         return [
             ...parent::share($request),
             'name' => config('app.name'),
-            'quote' => ['message' => trim($message), 'author' => trim($author)],
+            'quote' => ['message' => trim($quote['quote']), 'author' => $quote['author']],
             'auth' => [
                 'user' => $request->user(),
             ],
